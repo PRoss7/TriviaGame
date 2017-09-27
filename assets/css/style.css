@@ -7,13 +7,14 @@
 	background: url('../images/jumbotron.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	height: 400px;
+	height: 350px;
 }
 
-h1 {
-	margin-top: 260px;
-	margin-left: -850px;
-	font-family: 'Anton', sans-serif;
+h2 {
+	margin-top: 230px;
+	margin-left: -1070px;
+	font-family: 'Frijole', cursive;
+	font-size: 40px;
 }
 
 p {
@@ -22,24 +23,42 @@ p {
 }
 
 .img-right {
-	height: 400px;
-	width: 700px;
+	height: 300px;
+	width: 600px;
+	margin-top: 40px;
 }
 
 .img-wrong {
+	height: 300px;
+	width: 500px;
+	margin-top: 20px;
+}
 
+.morty-wrong {
+	height: 350px;
+	width: 600px;
+	margin-top: 20px;
 }
 
 .start-button {
 	margin-top: 175px;
-	max-width: auto;
-	margin-left: auto;
-	margin-right: auto;
+	width: 1500px;
+	height: 100px;
+	margin-left: -350px;
 	padding: 10px;
+	cursor: pointer;
+	font-family: 'Amatic SC', cursive;
+	font-size: 50px;
 }
 
 .timer-p {
-	margin-top: 40px;
+	font-family: 'Saira', sans-serif;
+	font-size: 32px;
+	color: red;
+	background: rgba(0, 0, 0, 0.6);
+	width: 375px;
+	border-radius: 20px;
+	margin-left: 200px;
 }
 
 .answer:hover {
@@ -47,53 +66,77 @@ p {
 }
 
 .answer {
-	padding-top: 7px;
-	height: 45px;
+	padding: 10px;
+	height: 70px;
+	width: auto;
 	color: blue;
-	padding-left: 14px;
 	background-color: black;
 	border-radius: 4px;
-}
-
-.img-wrong {
-	margin-top: 40px;
+	cursor: pointer;
+	font-family: 'Anton', sans-serif;
+	font-size: 35px;
+	margin-top: 20px;
 }
 
 .first-answer{
-	margin-top: 40px;
+	margin-top: 30px;
 }
-
-
 
 .reset-button {
-	margin-top: 40px;
+	margin-top: 50px;
 	font-family: 'Gloria Hallelujah', cursive;
-
+	width: 1000px;
+	height: 80px;
+	font-size: 35px;
+	margin-left: -100px;
 }
 
-.endGame {
+.finalTally {
+	margin-top: 10px;
+	font-family: 'Anton', sans-serif;
+	font-size: 35px;
+}
+
+.first-finalTally {
 	margin-top: 40px;
-
+	font-family: 'Anton', sans-serif;
+	font-size: 35px;
 }
 
-.gameFont {
+.question {
 	font-family: 'Wendy One', sans-serif;
-
+	font-size: 40px;
+	margin-top: 30px;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 20px;
+	padding: 10px;
 }
 
 .morty {
 	font-family: 'Gloria Hallelujah', cursive;
-
+	font-size: 30px;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 20px;
+	padding: 10px;
 }
 
-.rick-button {
-	font-family: 'Amatic SC', cursive;
-	font-size: 24px;
+.endMorty {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 20px;
+	padding: 10px;
+	margin-top: 40px;
 }
 
-.rick-game {
+
+.rick {
 	font-family: 'Amatic SC', cursive;
-	font-size: 72px;
+	font-size: 45px;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 20px;
+	padding: 10px;
+	margin-top: 20px;
 }
 
 body {
@@ -102,10 +145,194 @@ body {
 }
 /* Media Queries*/
 
+@media only screen and (max-width: 1550px) {
+
+	.jumbotron {
+		height: 300px;
+	}
+
+	h2 {
+		margin-left: -750px;
+		margin-top: 190px;
+	}
+
+	.start-button {
+		margin-left: -375px;
+		margin-top: 120px;
+	}
+	.question {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.timer-p {
+		margin-top: -10px;
+		margin-left: 190px;
+	}
+
+	.answer {
+		font-size: 25px;
+		height: 50px;
+		padding: 7px;
+		margin-top: 10px;
+	}
+
+	.img-wrong, .img-right {
+		height: 250px;
+	}
+
+	.img-right {
+		margin-top: 20px;
+	}
+
+	.first-answer {
+		margin-top: 20px;
+	}
+
+	.endMorty, .first-finalTally, .reset-button {
+		margin-top: 20px;
+	}
+
+	.first-finalTally {
+		margin-top: 20px;
+	}
+
+	.morty, .endMorty, .reset-button {
+		font-size: 25px;
+	}
+
+	.reset-button {
+		width: 800px;
+		height: 50px;
+		padding: 5px;
+		margin-left: -26px;
+	}
+
+	.rick {
+		font-size: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 980px) {
+	
+	.jumbotron, .container {
+		max-width: 100%;
+	}
+
+	h2 {
+		margin-left: -400px;
+		font-size: 30px;
+	}
+
+	.start-button {
+		width: 800px;
+		height: 70px;
+		margin-left: -100px;
+		font-size: 28px;
+		padding: 15px;
+	}
+	
+	.timer-p {
+		margin-left: 110px;
+	}
+
+	.answer {
+		height: 50px;
+		font-size: 25px;
+		padding: 8px;
+	}
+
+	.question {
+		font-size: 30px;
+	}
+
+	.rick {
+		font-size: 30px;
+	}
+
+	.morty, .endMorty {
+		font-size: 22px;
+	}
+
+	.endMorty {
+		margin-top: 20px;
+	}
+
+	.first-finalTally {
+		margin-top: 20px;
+	}
+
+	.reset-button {
+		width: 800px;
+		height: 70px;
+		font-size: 25px;
+		margin-top: 30px;
+		padding: 15px;
+	}
+
+
+}
+
 @media only screen and (max-width: 768px) {
 
-h1 {
-	margin-left: -375px;
-	margin-top: 290px;
-	font-size: 40px;
-} 
+	h2 {
+		margin-left: -240px;
+		margin-top: 210px;
+		font-size: 30px;
+	} 
+
+	.start-button {
+		width: 700px;
+		height: 70px;
+		margin-left: 10px;
+		font-size: 25px;
+		padding: 16px;
+	}
+
+	.timer-p {
+		margin-left: 175px;
+	}
+
+	.reset-button {
+		width: 700px;
+		height: 70px;
+		font-size: 24px;
+		margin-left: 10px;
+	}
+
+	.endMorty, .first-finalTally {
+		margin-top: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	h2 {
+		font-size: 26px;
+		margin-left: -170px;
+		margin-top: 210px;
+	}
+
+	.start-button {
+		width: 600px;
+		height: 50px;
+		margin-left: 0;
+		font-size: 21px;
+		padding: 10px;
+	}
+
+	.timer-p {
+		margin-left: 110px;
+	}
+
+	.reset-button {
+		width: 600px;
+		height: 50px;
+		font-size: 21px;
+		padding: 9px;
+		margin-left: 0;
+	}
+
+}
